@@ -6,15 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-    <button id="p1Button">+1 Player 1</button>
-    <button id="p2Button">+1 Player 2</button>
-    <button id="resetButton">Reset</button>
+    <div id="score-tracker">
+        <h1 class="title">Score Keeper</h1>
+        <form id="setMaxForm">
+            <input type="text" id="maxScoreInput" class="input" placeholder="Enter Max Score (default 14)">
+            <button type="submit" id="setScoreButton" class="button">Set Score</button>
+        </form>
 
+        <div id="info-box"></div>
+
+        <h1 id="scores-display" class=""><span id="p1Display">0</span> - <span id="p2Display">0</span></h1>
+        <button id="p1Button" class="button team1">+1</button>
+        <button id="p2Button" class="button team2">+1</button>
+        <button id="resetButton" class="button resetBtn">Reset</button>
+    </div>
     <script src="app.js"></script>
 </body>
 
