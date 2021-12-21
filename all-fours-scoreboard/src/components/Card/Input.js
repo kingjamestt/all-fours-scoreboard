@@ -7,6 +7,7 @@ const Input = (props) => {
             id={props.id}
             className={props.className}
             placeholder={props.placeholder}
+            name={props.name}
         />
     )
 };
