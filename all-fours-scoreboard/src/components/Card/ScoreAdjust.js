@@ -1,6 +1,7 @@
 import PlayerOneBtn from "./PlayerOneBtn";
 import PlayerTwoBtn from "./PlayerTwoBtn";
 import ResetBtn from "./ResetBtn";
+import "./index.css";
 
 const ScoreAdjust = () => {
     return (
