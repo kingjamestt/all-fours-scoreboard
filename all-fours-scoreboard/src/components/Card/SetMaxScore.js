@@ -2,7 +2,7 @@ import "./index.css";
 import Input from "./Input.js";
 import Btn from "./Btn.js";
 
-const SetMaxScore = () => {
+const SetMaxScore = (props) => {
     return (
         <form id="setMaxForm">
             <Input
@@ -16,6 +16,7 @@ const SetMaxScore = () => {
                 id="setScoreButton"
                 className="button"
                 buttonText="Set Score"
+                onClick={() => null}
             />
         </form>
     )
